@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+}
+
+input,
+button {
+  display: block;
+  padding: 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  margin-bottom: 10px;
+}
+
+.label-name {
+  position: relative;
+}
+
+.label-name_good {
+  position: relative;
+}
+
+.label-name_good::after {
+  content: 'Good';
+  color: green;
+  font-size: 14px;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+
+.label-name::after {
+  content: 'Enter at least 5 characters*';
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+
+.label-age {
+  position: relative;
+}
+
+.label-age_good {
+  position: relative;
+}
+
+.label-age_good::after {
+  content: 'Good';
+  color: green;
+  font-size: 14px;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+
+.label-age::after {
+  content: 'Enter 2 characters and age at least 18 years*';
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
